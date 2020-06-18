@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/* element styles & layout */
+
+/* top wrapper */
+
+.wrapper {
+    background-color: #f9f9f9;
+}
+
+/* header & nav */
+
+header {
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+.name {
+    margin-top:0;
+    font-weight:800;
+    padding-top:1em;
+    padding-bottom:0.5em;
+}
+
+ul {
+    padding-left:0;
+}
+
+header li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:black;
+    margin-left:0;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:0.5em;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    display:block;
+}
+
+/* bio */
+
+.bio {
+    
+    width:100%;
+    text-align: center;
+    padding-top:2.5em;
+    background-color: #f9f9f9;
+    padding-bottom:2em;
+}
+
+.bio img {
+    width:65%;
+}
+
+.bio-text {
+    padding:0.5em 1.5em 0 1.5em;
+    color: dimgrey;
+    font-size: large;
+}
+
+/* portfolio section */
+
+.portfolio {
+    text-align:center;
+    padding-top:2em;
+}
+
+.portfolio h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 2em;
+}
+
+.portfolio h3 {
+    font-weight: 400;
+    padding-top:0.6em;
+}
+
+.portfolio img {
+    width:90%;
+}
+
+.portfolio p {
+    padding:0 1em 1em 1em;
+    line-height: 1.4em;
+}
+
+/* contact section */
+
+.wrapper-bottom {
+    background-color:#f9f9f9;
+    text-align:center;
+}
+
+.contact {
+    padding-top: 3em;
+    margin-top:2em;
+    padding-right: 1em;
+    padding-right: 1em;
+}
+
+.contact h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 1.5em;
+}
+
+.contact-p {
+    width:70%;
+    color:dimgrey;
+    display:inline;
+    text-align: center;
+}
+
+.contact p {
+    color:dimgrey;
+    font-size:1em;
+    margin-right: 0;
+}
+
+.contact span{
+    font-weight: bolder;
+    color:dimgrey;
+}
+
+.contact a {
+    font-weight:bolder;
+    display:inline;
+    color:dimgrey;
+    padding-bottom: 2em;
+}
+
+.email {
+    padding-bottom: 2em;
+}
+
+hr {
+    color:lightgrey;
+    width:90%;
+}
+
+footer {
+    position: relative;
+}
+
+.name-bottom {
+    float:left;
+    padding-left:2em;
+    font-weight:800;
+    font-size: smaller;
+}
+
+.home-bottom {
+    float:right;
+    padding-right:2em;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: smaller;
+}
+
+
+
+/* media queries */
+
