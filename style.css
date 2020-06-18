@@ -172,7 +172,130 @@ footer {
     font-size: smaller;
 }
 
+/* hide bottom nav for wider screens */
+    .nav-bottom {
+        display: none;
+    }
 
 
 /* media queries */
 
+@media (min-width:768px) {
+
+    /* top layout */
+
+    header li {
+        display:inline;
+        text-align: center;
+        background-color: transparent;
+        padding-right:1em;
+        padding-left:1em;
+    }
+
+    header li a {
+        display: inline;
+    }
+
+    .bio {
+        position: relative;
+    }
+
+    .bio-text {
+        float:left;
+        width:60%;
+        text-align: left;
+        padding-top:0;
+        margin-top: 0;
+    }
+
+    .bio img {
+        float: right;
+        width:40%;
+        padding-right: 2em;
+    }
+
+    /*portfolio pages layout */
+
+    .page-mark,
+    .page-trav,
+    .page-phot {
+        float:left;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .page-sear,
+    .page-spor,
+    .page-calc {
+        width:50%;
+        float:right;
+        margin-left:auto;
+        margin-right:auto;    }
+
+    .portfolio p {
+        width:100%;
+        text-align: center;
+        padding-left:3em;
+        padding-right: 3em;
+    }
+
+    .portfolio {
+        display:relative;
+    }
+
+  /* footer stuff */
+
+  footer {
+      text-align: center;
+      width:95%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .contact {
+      width:65%;
+      margin: auto;
+      font-size: larger;
+  }
+
+ .phone {
+     padding-top:2.5em;
+ }
+
+ .home-bottom {
+     display: none;
+ }
+
+.nav-bottom {
+    display: contents;
+ }
+
+ .nav-bottom ul {
+     float:right;
+     padding-bottom: 5em;
+ }
+
+ .nav-bottom li {
+     float:left;
+     list-style: none;
+     display:inline;
+     padding-right: 2em;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+
+
+} /* end 768px */
+
+@media (min-width:1024px) {
+
+} /* end 1024px */
+
+/* clearfix for floats on containers */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
