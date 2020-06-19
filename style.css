@@ -1,21 +1,30 @@
+/* fonts */
+
+
+
 * {
     box-sizing: border-box;
-    font-family:sans-serif;
 }
 
-/* element styles & layout */
+body {
+    font-family:'Roboto';
+}
 
 /* top wrapper */
 
 .wrapper {
-    background-color: #f9f9f9;
+    background-color: #6699cc;
+}
+
+a:hover {
+    color:white;
 }
 
 /* header & nav */
 
 header {
     text-align:center;
-    background-color: #f9f9f9;
+    background-color: #6699cc; /* fade this out at the bottom? */
 }
 
 .name {
@@ -27,6 +36,10 @@ header {
 
 ul {
     padding-left:0;
+}
+
+nav a {
+    display:block;
 }
 
 header li {
@@ -45,8 +58,38 @@ header li {
 
 a {
     text-decoration: none;
-    color:black;
-    display:block;
+    color: black;
+}
+
+/* skills */
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    font-family:'Roboto';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.skills-img {
+    width:50%;
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-img2 {
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-text {
+    font-family:'Crimson Text';
+    font-size: 1.5em;
 }
 
 /* bio */
@@ -56,7 +99,7 @@ a {
     width:100%;
     text-align: center;
     padding-top:2.5em;
-    background-color: #f9f9f9;
+    background-image: linear-gradient(#6699cc, white);
     padding-bottom:2em;
 }
 
@@ -66,8 +109,9 @@ a {
 
 .bio-text {
     padding:0.5em 1.5em 0 1.5em;
-    color: dimgrey;
-    font-size: large;
+    color: black;
+    font-family: 'Crimson Text';
+    font-size: 1.5em;
 }
 
 /* portfolio section */
@@ -96,20 +140,20 @@ a {
 .portfolio p {
     padding:0 1em 1em 1em;
     line-height: 1.4em;
+    font-family: 'Crimson Text';
+    font-size: 1.2em;
 }
 
 /* contact section */
 
 .wrapper-bottom {
-    background-color:#f9f9f9;
+    background-image: linear-gradient(to top, #6699cc, white);
     text-align:center;
 }
 
 .contact {
     padding-top: 3em;
     margin-top:2em;
-    padding-right: 1em;
-    padding-right: 1em;
 }
 
 .contact h2 {
@@ -120,16 +164,14 @@ a {
 }
 
 .contact-p {
-    width:70%;
+    width:80%;
     color:dimgrey;
-    display:inline;
+    display:block;
     text-align: center;
-}
-
-.contact p {
-    color:dimgrey;
-    font-size:1em;
-    margin-right: 0;
+    font-family: 'Crimson Text';
+    font-size:1.4em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact span{
@@ -139,7 +181,6 @@ a {
 
 .contact a {
     font-weight:bolder;
-    display:inline;
     color:dimgrey;
     padding-bottom: 2em;
 }
@@ -155,6 +196,7 @@ hr {
 
 footer {
     position: relative;
+    background-color:transparent;
 }
 
 .name-bottom {
@@ -183,6 +225,10 @@ footer {
 @media (min-width:768px) {
 
     /* top layout */
+
+    nav a {
+        display:inline;
+    }
 
     header li {
         display:inline;
@@ -214,36 +260,55 @@ footer {
         padding-right: 2em;
     }
 
+    /* skills layout */
+.skills-text {
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-img2 {
+
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
     /*portfolio pages layout */
 
     .page-mark,
-    .page-trav,
-    .page-phot {
-        float:left;
-        width:50%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .page-sear,
     .page-spor,
+    .page-sear,
+    .page-trav,
+    .page-sear,
+    .page-phot,
     .page-calc {
         width:50%;
-        float:right;
+        float:left;
         margin-left:auto;
-        margin-right:auto;    }
+        margin-right:auto;
+
+    }
 
     .portfolio p {
         width:100%;
-        text-align: center;
-        padding-left:3em;
-        padding-right: 3em;
+        text-align: center; 
+            width:100%;
+            padding:0 2em 1em 2em;
+            margin-top:0.2em;
+    }
+
+    .portfolio h3 {
+        margin-bottom: 0.5em;
     }
 
     .portfolio {
         display:relative;
     }
 
+    .portfolio img {
+        margin-top:1em;
+    }
   /* footer stuff */
 
   footer {
@@ -285,14 +350,112 @@ footer {
      text-transform: uppercase;
  }
 
+ .name-bottom {
+     font-size: 1em;
+ }
+
 
 } /* end 768px */
 
+
+
+/* full width screen */
+
 @media (min-width:1024px) {
+
+    /* header/banner */
+
+    * {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .name {
+        float: left;
+        padding-top:0.3em;
+        padding-left: 1em;
+    }
+
+    .nav-top {
+        float:right;
+        padding-top:0.2em;
+    }
+    
+   .bio-text {
+       font-size: larger;
+   }
+
+   /* skills */
+
+   .skills-img {
+       width:33%;
+   }
+
+   .skills-img2 {
+       width:40%;
+   }
+
+   .js-img {
+       float:left;
+       width:33%;
+       padding-top: 40px
+       ;
+   }
+
+   .skills-text {
+       clear:left;
+   }
+
+   /* portfolio */
+
+   .portfolio h2 {
+       padding-top:3em;
+       padding-bottom:2.5em;
+   }
+
+   .page-mark,
+   .page-spor {
+       float:left;
+       width:32%;
+   }
+
+    .page-trav,
+    .page-phot,
+    .page-spor,
+    .page-mark ,
+    .page-sear,
+    .page-calc{
+        float:left;
+        width:33.3%;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:auto;
+    }
+
+    .portfolio p {
+        width:100%;
+        padding:0 1em 0 1em;
+    }
+
+    /* footer */
+
+    .contact-p {
+        width:70%;
+        color:dimgrey;
+        display:block;
+        text-align: center;
+        font-size:1em;
+    }
 
 } /* end 1024px */
 
-/* clearfix for floats on containers */
+
+/* clearfix for floats on all containers */
 
 .clearfix::after {
     content: "";
