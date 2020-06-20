@@ -7,13 +7,13 @@
 }
 
 body {
-    font-family:'Roboto';
+    font-family:'Montserrat';
 }
 
 /* top wrapper */
 
 .wrapper {
-    background-color: #6699cc;
+    background-color: #A9A9F5;
 }
 
 a:hover {
@@ -24,7 +24,7 @@ a:hover {
 
 header {
     text-align:center;
-    background-color: #6699cc; /* fade this out at the bottom? */
+    background-color: #A9A9F5; /* fade this out at the bottom? */
 }
 
 .name {
@@ -68,7 +68,7 @@ a {
 }
 
 .skills h2 {
-    font-family:'Roboto';
+    font-family:'Montserrat';
     text-align: center;
     text-transform: uppercase;
     font-size: 1em;
@@ -99,7 +99,7 @@ a {
     width:100%;
     text-align: center;
     padding-top:2.5em;
-    background-image: linear-gradient(#6699cc, white);
+    background-image: linear-gradient(#A9A9F5, white);
     padding-bottom:2em;
 }
 
@@ -224,6 +224,10 @@ footer {
 
 @media (min-width:768px) {
 
+    html {
+        height:450px;
+    }
+
     /* top layout */
 
     nav a {
@@ -250,8 +254,10 @@ footer {
         float:left;
         width:60%;
         text-align: left;
-        padding-top:0;
+        padding-top:1em;
         margin-top: 0;
+        padding-left:2em;
+        height:150px;
     }
 
     .bio img {
@@ -287,6 +293,7 @@ footer {
         float:left;
         margin-left:auto;
         margin-right:auto;
+        height:425px;
 
     }
 
@@ -303,7 +310,7 @@ footer {
     }
 
     .portfolio {
-        display:relative;
+        position:relative;
     }
 
     .portfolio img {
@@ -378,7 +385,7 @@ footer {
     .name {
         float: left;
         padding-top:0.3em;
-        padding-left: 1em;
+        padding-left: 1.5em;
     }
 
     .nav-top {
@@ -387,7 +394,8 @@ footer {
     }
     
    .bio-text {
-       font-size: larger;
+       padding-top: 1em;
+       font-size: 2em;
    }
 
    /* skills */
